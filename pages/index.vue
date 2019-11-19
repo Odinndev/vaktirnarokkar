@@ -45,6 +45,11 @@ import Card from '~/components/Card'
 
 export default {
   name: 'HomePage',
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
 
   components: {
     Card
